@@ -263,7 +263,11 @@ img {
 
 .features-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-list-item {
@@ -276,6 +280,7 @@ img {
   justify-content: center;
   margin-bottom: 30px;
   height: 120px;
+  width: 100%;
 
   background-color: var(--secondary-background-color);
 }
@@ -828,6 +833,7 @@ textarea::placeholder {
 
 .agreement-link {
   margin-left: 5px;
+  color: var(--accent-color);
 }
 
 .form-field-button {
