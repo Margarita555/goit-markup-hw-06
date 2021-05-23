@@ -600,11 +600,6 @@ img {
     1px 4px 6px rgba(27, 27, 27, 0.16);
 }
 
-/* .portfolio-set > .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(27, 27, 27, 0.16);
-} */
-
 .portfolio-set .text {
   color: var(--primary-text-color);
   font-family: var(--main-font);
@@ -637,7 +632,6 @@ img {
 }
 
 .portfolio-set-link:hover .description {
-  opacity: 1;
   transform: translate(0);
 }
 
@@ -704,6 +698,7 @@ img {
   border-radius: 50%;
   border-color: rgba(184, 118, 118, 0.1);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-close-icon {
