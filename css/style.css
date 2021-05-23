@@ -700,6 +700,11 @@ img {
   margin: auto;
 }
 
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+  fill: var(--accent-color);
+}
+
 .form {
   margin-left: auto;
   margin-right: auto;
@@ -723,20 +728,97 @@ img {
 }
 
 .form-application {
-  padding: 11px 12px 11px 40px;
+  padding: 15px 14px 15px 42px;
+  margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .form-field label {
   margin-bottom: 4px;
+
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .form-field-icon {
   position: absolute;
-  left: 11px;
-  top: 35px;
+  left: 15px;
+  top: 38px;
 
   fill: var(--title-text-color);
+}
+
+.form-application:focus {
+  border-color: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+
+.form-application:focus + .form-field-icon {
+  fill: var(--accent-color);
+}
+
+.form-application-comment {
+  padding: 12px 16px;
+}
+
+textarea::placeholder {
+  font-family: var(--main-font);
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.checkbox-form-field {
+  position: relative;
+}
+
+.checkbox-tick-icon {
+  position: absolute;
+  left: -5px;
+  /* opacity: 0; */
+  background-color: var(--accent-color);
+  fill: var(--primary-background-color);
+  border-radius: 4px;
+}
+
+.form-field-button {
+  display: flex;
+}
+
+.send-button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 55px;
+  cursor: pointer;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.send-button:hover,
+.send-button:focus {
+  background-color: var(--secondary-accent-color);
 }
 /* ==================== Modal window END====================== */
