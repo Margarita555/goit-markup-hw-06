@@ -265,19 +265,18 @@ img {
 
 .features-list {
   display: flex;
-  /* justify-content: space-between; */
 }
 
-/* .features-list-item + .features-list-item {
+.features-list-item + .features-list-item {
   margin-left: 30px;
+}
+
+/* .features-list .features-list-item:not(:last-child) {
+  margin-right: 30px;
 } */
 
-.features-list .features-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-list-item {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .features-thumb {
@@ -550,6 +549,14 @@ img {
   border-radius: 4px;
 }
 
+.footer-mail-input::placeholder {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-signin-button {
   display: inline-flex;
   align-items: center;
@@ -736,6 +743,7 @@ img {
 
 .modal-close-icon {
   margin: auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover .modal-close-icon,
@@ -765,11 +773,13 @@ img {
   flex-direction: column;
 }
 
-.form-application {
+.form-input {
   padding: 15px 14px 15px 42px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field label {
@@ -788,18 +798,19 @@ img {
   top: 35px;
 
   fill: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-application:focus {
+.form-input:focus {
   border-color: var(--accent-color);
   outline-color: var(--accent-color);
 }
 
-.form-application:focus + .form-field-icon {
+.form-input:focus + .form-field-icon {
   fill: var(--accent-color);
 }
 
-.form-application-comment {
+.form-comment {
   padding: 12px 16px;
 }
 
@@ -876,6 +887,7 @@ textarea::placeholder {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button:hover,
