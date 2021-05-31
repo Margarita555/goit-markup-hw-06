@@ -677,6 +677,19 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.description::-webkit-scrollbar {
+  width: 10px;
+}
+.description::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+.description::-webkit-scrollbar-thumb {
+  background: #afb1b8;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
 .portfolio-set-link:hover .description {
   transform: translate(0);
 }
