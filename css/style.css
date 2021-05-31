@@ -541,8 +541,13 @@ img {
   margin-left: 93px;
 }
 
+.signin-box {
+  display: flex;
+}
+
 .footer-mail-input {
   padding: 15px 16px;
+  margin-right: 12px;
   min-width: 358px;
   background-color: var(--footer-background-color);
   border-color: rgba(255, 255, 255, 0.6);
